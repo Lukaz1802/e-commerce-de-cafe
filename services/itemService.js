@@ -1,5 +1,5 @@
 export async function getItems() {
-  const request = await fetch(" ");
+  const request = await fetch("https://e-commerce-de-cafe-i79ph484v-lukaz1802.vercel.app/api/items
   const items = await request.json();
   return items;
 }
