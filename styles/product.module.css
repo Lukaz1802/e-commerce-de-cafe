@@ -1,0 +1,59 @@
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.item {
+  background-color: white;
+  padding: 20px;
+  font-size: 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.listItem {
+  display: flex;
+  gap: 10px;
+  border-bottom: solid 1px #ccc;
+  padding: 10px 0;
+}
+
+.price {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.image {
+  width: 600px;
+  min-width: 600px;
+}
+
+.page {
+  background-color: white;
+  padding: 40px;
+  display: flex;
+
+  box-shadow: 0 0 50px rgb(33, 33, 33);
+  transform: scale(0);
+  animation: scale 0.3s ease forwards;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
