@@ -1,11 +1,12 @@
-//export async function getItems() {
- // const request = await fetch(" ")
- // const items = await request.json();
- // return items;
-//}
+import data from "../pages/api/items.json";
 
-//export async function getLatestItems() {
- // const items = await getItems();
+export async function getItems() {
+  const items = data;
+  return items;
+}
 
-  //return items.slice(0, 3);
-//}
+export async function getLatestItems() {
+  const items = await getItems();
+
+  return items.slice(0, 3);
+}
